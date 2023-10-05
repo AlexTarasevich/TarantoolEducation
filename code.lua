@@ -5,9 +5,9 @@
 
 local ten = 10
 local twelve = 12
-print('Twelve is greater than ten, right?: ', twelve <= ten)
+print('Twelve is greater than ten, right?: ', twelve >= ten)
 print("Hm, I'm sure, that twelve is not less than ten: ", twelve <= ten)
-print('Also, twelve is not equal to ten: ', twelve == ten)
+print('Also, twelve is not equal to ten: ', twelve ~= ten)
 print('Well, bro, twelve is not equal to ten, exactly: ', twelve ~= ten)
 
 local x = 1
