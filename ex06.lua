@@ -1,0 +1,29 @@
+-- Программа запрашивает имя и возраст первого человека, затем имя и возраст второго человека, выводит, кто из
+-- них старший и кто из них младший. Если возрасты равны, выводит - фразу "<Человек 1> и <Человек 2> ровесники".
+
+print("Введите имя первого человека")
+local first_person_name = assert(tonumber(io.read('*l')), 'Need number!') 
+
+
+print("Введите возраст первого человека")
+local first_person_age = assert(tonumber(io.read('*l')), 'Need number!') 
+
+
+print("Введите имя второго человека")
+local second_person_name = assert(tonumber(io.read('*l')), 'Need number!') 
+
+
+print("Введите возраст второго человека")
+local second_person_age = assert(tonumber(io.read('*l')), 'Need number!') 
+
+
+
+if first_person_age > second_person_age then
+    print("Старший первый человек и его имя - ".. first_person_name)
+    print("Младше второй человек и его имя - ".. second_person_name)
+elseif first_person_age < second_person_age then 
+    print("Старший второй человек и его имя - ".. second_person_name)
+    print("Младше первый человек и его имя - ".. first_person_name)
+elseif first_person_age == second_person_age  then
+    print(first_person_name .. " и " .. second_person_name .. " ровесники")
+end
