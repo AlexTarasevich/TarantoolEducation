@@ -5,16 +5,12 @@
 print("Введите число")
 local a = assert(tonumber(io.read('*l')), 'Need number!')
 
-if a == 4 or a == 5 or a == 6 or a == 7 or a == 8 or a == 9 or a == 10 then
+
+if a == 4 or a >= 5 and a <= 10 then
     print("Число увеличино в 2 раза:", a * 2)
-elseif a < 0 or a == 1 or a == 2 or a == 3 then
+elseif a < 0 or a <= 3 then
     print("Число уменьшина на 55:", a - 55)
 end
-
-
-
-
--- диапозон от меньшего до большего < > переписать
 
 
 
