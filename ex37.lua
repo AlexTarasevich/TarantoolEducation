@@ -5,14 +5,13 @@ print("Введите число")
 local n = assert(tonumber(io.read('*l')), 'Need number!')
 
 
-
-
 if  n == 0 then
     print("Вы ввели 0, а надо больше :)")
-elseif n ~= 0 then
-   repeat
+else
+    ::loop::
      print("Running!")
     n = n - 1
-    until n == 0
+    if n ~= 0 then
+        goto loop
+    end
 end
-
